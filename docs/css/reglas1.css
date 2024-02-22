@@ -368,4 +368,41 @@ footer{
        text-align:center;
        }
 
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajuste el padding para dispositivos móviles */
+    }
 
+    .logo {
+        font-size: 24px; /* Reducir el tamaño del logotipo para dispositivos móviles */
+    }
+
+    .navigation {
+        display: none; /* Ocultar la navegación en dispositivos móviles */
+    }
+
+    .navigation li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    footer {
+        padding: 15px 0; /* Ajustar el padding del pie de página para dispositivos móviles */
+    }
+
+    main {
+        flex-direction: column; /* Cambiar la dirección de los elementos principales a columna */
+    }
+
+    article, aside {
+        flex-basis: 100%; /* Establecer el ancho completo en dispositivos móviles */
+    }
+}
